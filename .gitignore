@@ -1,0 +1,19 @@
+# Screenshots de dev
+*.png
+*.jpg
+*.jpeg
+
+# Archives
+*.zip
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Netlify local
+.netlify/

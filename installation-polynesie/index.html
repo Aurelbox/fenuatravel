@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S'installer en Polynésie française : Calculateur de budget 2026 | FenuaTravel</title>
+<meta name="description" content="Calculez le coût réel de votre installation définitive en Polynésie française : déménagement, logement, démarches, coût de la vie mensuel. Conseils d'un local.">
+<meta name="keywords" content="s'installer polynésie française, vivre polynésie, expatriation tahiti, coût de la vie polynésie, déménagement polynésie">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.fenuatravel.com/installation-polynesie/">
+<meta property="og:title" content="S'installer en Polynésie française : Guide & Calculateur 2026">
+<meta property="og:description" content="Combien faut-il pour s'installer définitivement en Polynésie ? Budget installation + coût mensuel estimé par un local.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculateur Installation Polynésie française","url":"https://www.fenuatravel.com/installation-polynesie/","applicationCategory":"FinanceApplication","description":"Estimation du budget d'installation et du coût de la vie mensuel en Polynésie française","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"XPF"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --coral:#E8573C;--coral-dk:#C43D24;--teal:#00897B;--teal-lt:#4DB6AC;
+  --ocean:#006994;--green:#2E7D32;--amber:#F57F17;
+  --dark:#141C26;--white:#fff;--off-white:#FAFAF7;--gray:#6B7280;--gray-lt:#F3F4F6;
+  --radius:14px;--shadow:0 4px 28px rgba(20,28,38,.10);
+}
+body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--dark);line-height:1.6}
+
+/* HEADER */
+#header{position:fixed;top:0;left:0;width:100%;z-index:900;padding:1.1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;background:rgba(20,28,38,.96);backdrop-filter:blur(14px);box-shadow:0 2px 20px rgba(0,0,0,.2)}
+.logo-text{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:700;color:#fff;text-decoration:none}.logo-text em{color:var(--teal-lt);font-style:normal}
+.header-back{color:rgba(255,255,255,.7);text-decoration:none;font-size:.85rem;transition:color .2s}.header-back:hover{color:var(--teal-lt)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1A3A2E,#00897B);padding:7rem 2rem 4rem;text-align:center;color:#fff}
+.hero-tag{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:.3rem .9rem;font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:900;margin-bottom:.75rem;line-height:1.1}
+.hero h1 em{color:#A5D6A7;font-style:normal}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto 2rem}
+.hero-badges{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:.4rem .9rem;font-size:.78rem;font-weight:500}
+
+/* ALERT INTRO */
+.alert-intro{max-width:900px;margin:2.5rem auto;padding:1.25rem 1.5rem;background:rgba(245,127,23,.08);border:1px solid rgba(245,127,23,.3);border-radius:12px;font-size:.85rem;color:var(--dark);line-height:1.6}
+.alert-intro strong{color:var(--amber)}
+
+/* LAYOUT */
+.main{max-width:1100px;margin:0 auto;padding:1rem 1.5rem 4rem;display:grid;grid-template-columns:1fr 400px;gap:2.5rem;align-items:start}
+@media(max-width:900px){.main{grid-template-columns:1fr}.result-sticky{position:static}}
+
+/* CARDS */
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:1.5rem}
+.card-head{padding:1.25rem 1.5rem;border-bottom:1px solid #F0F0F0;display:flex;align-items:center;gap:.75rem}
+.card-num{width:32px;height:32px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;flex-shrink:0}
+.card-title{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:700}
+.card-sub{font-size:.78rem;color:var(--gray);margin-left:.25rem}
+.card-body{padding:1.5rem}
+
+/* INPUTS */
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.field-row.full{grid-template-columns:1fr}
+.field{display:flex;flex-direction:column;gap:.4rem}
+label{font-size:.82rem;font-weight:600;color:var(--gray)}
+select,input[type=number]{width:100%;padding:.65rem .9rem;border:1.5px solid #E5E7EB;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--dark);background:#fff;appearance:none;transition:border-color .2s;cursor:pointer}
+select:focus,input[type=number]:focus{outline:none;border-color:var(--teal)}
+.select-wrap{position:relative}
+.select-wrap::after{content:'▾';position:absolute;right:.9rem;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--gray);font-size:.8rem}
+.field-hint{font-size:.75rem;color:var(--gray);margin-top:.2rem;line-height:1.4}
+
+/* CHIPS */
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.25rem}
+.chip{padding:.4rem .9rem;border-radius:20px;border:1.5px solid #E5E7EB;font-size:.8rem;font-weight:500;cursor:pointer;transition:all .2s;background:#fff;color:var(--dark);user-select:none}
+.chip.on{border-color:var(--teal);background:rgba(0,137,123,.08);color:var(--teal)}
+.chip.on-amber{border-color:var(--amber);background:rgba(245,127,23,.08);color:var(--amber)}
+
+/* SECTION TITLE */
+.section-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gray);margin:1.25rem 0 .6rem;padding-bottom:.4rem;border-bottom:1px solid #F0F0F0}
+
+/* RESULT PANEL */
+.result-sticky{position:sticky;top:90px}
+.tabs{display:flex;gap:0;background:rgba(20,28,38,.07);border-radius:10px;padding:.25rem;margin-bottom:1.5rem}
+.tab-btn{flex:1;padding:.5rem;border:none;background:transparent;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s;color:var(--gray)}
+.tab-btn.on{background:#fff;color:var(--dark);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+
+.result-card{background:var(--dark);color:#fff;border-radius:var(--radius);box-shadow:0 12px 50px rgba(20,28,38,.25);overflow:hidden}
+.result-head{padding:1.5rem;text-align:center}
+.result-head.install{background:linear-gradient(135deg,#1A3A2E,#00897B)}
+.result-head.mensuel{background:linear-gradient(135deg,#0D3B5E,#006994)}
+.result-head h2{font-family:'Fraunces',serif;font-size:1rem;font-weight:700;margin-bottom:.4rem;opacity:.85}
+.result-total{font-family:'Fraunces',serif;font-size:2.8rem;font-weight:900;line-height:1}
+.result-total sup{font-size:1.3rem;vertical-align:super}
+.result-total sub{font-size:.85rem;font-weight:400;opacity:.6;margin-left:.15rem}
+.result-sub{font-size:.75rem;opacity:.55;margin-top:.3rem}
+
+.result-body{padding:1.5rem}
+.result-section-title{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.4);margin:1rem 0 .5rem}
+.result-line{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:.84rem}
+.result-line:last-child{border-bottom:none}
+.result-label{color:rgba(255,255,255,.7);display:flex;align-items:center;gap:.4rem}
+.result-val{font-weight:600;color:#fff}
+.result-val.green{color:#81C784}
+.result-val.amber{color:#FFD54F}
+.result-total-line{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0 0;border-top:1px solid rgba(255,255,255,.15);font-weight:700;font-size:.95rem;margin-top:.5rem}
+.result-total-val{color:var(--teal-lt);font-size:1.1rem}
+
+/* BARS */
+.bar-section{margin-top:1.25rem}
+.bar-section h3{font-family:'Fraunces',serif;font-size:.95rem;margin-bottom:.75rem}
+.bar-row{margin-bottom:.6rem}
+.bar-label-row{display:flex;justify-content:space-between;font-size:.75rem;margin-bottom:.25rem;color:rgba(255,255,255,.65)}
+.bar-track{background:rgba(255,255,255,.08);border-radius:4px;height:7px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;transition:width .5s ease}
+
+/* TIP BOX */
+.tip-box{background:rgba(0,137,123,.12);border:1px solid rgba(77,182,172,.25);border-radius:10px;padding:.9rem 1.1rem;margin-top:1rem}
+.tip-box h4{font-size:.78rem;font-weight:700;color:var(--teal-lt);margin-bottom:.35rem}
+.tip-box p{font-size:.78rem;color:rgba(255,255,255,.6);line-height:1.5}
+.warn-box{background:rgba(245,127,23,.1);border:1px solid rgba(245,127,23,.25);border-radius:10px;padding:.9rem 1.1rem;margin-top:.75rem}
+.warn-box h4{font-size:.78rem;font-weight:700;color:#FFD54F;margin-bottom:.35rem}
+.warn-box p{font-size:.78rem;color:rgba(255,255,255,.6);line-height:1.5}
+
+/* LINKS */
+.cta-ressource{display:block;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.8);text-align:center;padding:.75rem 1.2rem;border-radius:10px;text-decoration:none;font-size:.82rem;font-weight:500;margin-top:.6rem;transition:background .2s}
+.cta-ressource:hover{background:rgba(255,255,255,.15)}
+
+/* CHECKLIST */
+.checklist{margin-top:.5rem}
+.cl-item{display:flex;align-items:flex-start;gap:.6rem;padding:.5rem 0;border-bottom:1px solid #F0F0F0;font-size:.83rem}
+.cl-item:last-child{border-bottom:none}
+.cl-icon{flex-shrink:0;font-size:.9rem;margin-top:.05rem}
+.cl-text strong{display:block;font-weight:600;font-size:.82rem}
+.cl-text span{font-size:.76rem;color:var(--gray);line-height:1.4}
+
+/* DISCLAIMER */
+.disclaimer{background:var(--gray-lt);border-radius:10px;padding:1.1rem;font-size:.76rem;color:var(--gray);line-height:1.5;margin-top:1.5rem}
+
+footer{background:var(--dark);padding:2.5rem;text-align:center;color:rgba(255,255,255,.4);font-size:.8rem;margin-top:0}
+footer a{color:var(--teal-lt);text-decoration:none}
+
+@media(max-width:640px){.field-row{grid-template-columns:1fr}.hero{padding:6rem 1.25rem 2.5rem}}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <a href="/" class="logo-text">Fenua<em>Travel</em></a>
+  <a href="/" class="header-back">← Accueil</a>
+</header>
+
+<section class="hero">
+  <div class="hero-tag">🌺 Guide & outil</div>
+  <h1>Combien coûte de<br>s'installer <em>définitivement</em><br>en Polynésie française ?</h1>
+  <p class="hero-sub">Budget d'installation unique + coût de la vie mensuel réaliste. Calculé par quelqu'un qui vit ici — pas par une agence touristique.</p>
+  <div class="hero-badges">
+    <span class="badge">🏠 Logement</span>
+    <span class="badge">📦 Déménagement</span>
+    <span class="badge">📋 Démarches admin</span>
+    <span class="badge">🛒 Coût de la vie</span>
+    <span class="badge">💰 Budget mensuel</span>
+  </div>
+</section>
+
+<div style="padding:0 1.5rem">
+<div class="alert-intro">
+  <strong>⚠️ Avant de commencer :</strong> La Polynésie française est un territoire d'outre-mer français, pas un pays étranger. Les ressortissants français n'ont pas besoin de visa — mais s'installer durablement nécessite tout de même des démarches (titre de séjour pour les non-UE, ouverture droits CPS, etc.). Les prix sont <strong>significativement plus élevés qu'en France métropolitaine</strong> : +30 à +60% sur l'alimentaire, le carburant, les produits importés.
+</div>
+</div>
+
+<div class="main">
+  <!-- FORM -->
+  <div>
+
+    <!-- SITUATION -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-num">1</div>
+        <div class="card-title">Votre profil</div>
+      </div>
+      <div class="card-body">
+        <div class="field-row">
+          <div class="field">
+            <label>Situation</label>
+            <div class="select-wrap">
+              <select id="situation" onchange="calc()">
+                <option value="salarie_local">Salarié (contrat local)</option>
+                <option value="salarie_detache">Salarié détaché (France)</option>
+                <option value="entrepreneur">Entrepreneur / Freelance</option>
+                <option value="retraite">Retraité</option>
+                <option value="nomade">Nomade digital</option>
+                <option value="fonctionnaire">Fonctionnaire muté</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Composition du foyer</label>
+            <div class="select-wrap">
+              <select id="foyer" onchange="calc()">
+                <option value="seul">Seul(e)</option>
+                <option value="couple" selected>Couple (sans enfants)</option>
+                <option value="famille1">Famille (1 enfant)</option>
+                <option value="famille2">Famille (2 enfants)</option>
+                <option value="famille3">Famille (3+ enfants)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Île d'installation</label>
+            <div class="select-wrap">
+              <select id="ile" onchange="calc()">
+                <option value="tahiti_papeete">Tahiti — Papeete (centre)</option>
+                <option value="tahiti_periph" selected>Tahiti — Périphérie / communes</option>
+                <option value="moorea">Moorea</option>
+                <option value="bora">Bora Bora</option>
+                <option value="raiatea">Raiatea / Huahine</option>
+                <option value="tuamotu">Tuamotu (Rangiroa, etc.)</option>
+                <option value="marquises">Marquises</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Origine / départ</label>
+            <div class="select-wrap">
+              <select id="origine" onchange="calc()">
+                <option value="france_metro" selected>France métropolitaine</option>
+                <option value="europe">Autre Europe</option>
+                <option value="dom_tom">DOM-TOM</option>
+                <option value="usa_canada">Amérique du Nord</option>
+                <option value="australie">Australie / Pacifique</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGEMENT -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-num">2</div>
+        <div class="card-title">Logement</div>
+      </div>
+      <div class="card-body">
+        <div class="section-label">Type de logement</div>
+        <div class="chips" id="chips-logement">
+          <div class="chip" data-l="studio" onclick="toggleLogement(this)">Studio</div>
+          <div class="chip on" data-l="f2" onclick="toggleLogement(this)">F2 (1 ch.)</div>
+          <div class="chip" data-l="f3" onclick="toggleLogement(this)">F3 (2 ch.)</div>
+          <div class="chip" data-l="f4" onclick="toggleLogement(this)">F4+ (maison)</div>
+        </div>
+        <div class="section-label" style="margin-top:1.1rem">Statut</div>
+        <div class="chips" id="chips-statut-logement">
+          <div class="chip on" data-sl="loc" onclick="toggleStatutLog(this)">Locataire</div>
+          <div class="chip" data-sl="achat" onclick="toggleStatutLog(this)">Propriétaire (achat)</div>
+          <div class="chip" data-sl="fonc" onclick="toggleStatutLog(this)">Logement de fonction</div>
+        </div>
+        <p class="field-hint" id="logement-hint" style="margin-top:.75rem">Les loyers à Papeete et alentours sont parmi les plus élevés de la zone Pacifique, souvent supérieurs à Paris province.</p>
+      </div>
+    </div>
+
+    <!-- DÉMÉNAGEMENT -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-num">3</div>
+        <div class="card-title">Déménagement & installation</div>
+      </div>
+      <div class="card-body">
+        <div class="section-label">Volume de biens à expédier</div>
+        <div class="chips" id="chips-demenag">
+          <div class="chip" data-d="valises" onclick="toggleDemenag(this)">🧳 Valises uniquement</div>
+          <div class="chip on" data-d="partiel" onclick="toggleDemenag(this)">📦 Container partiel (5-10m³)</div>
+          <div class="chip" data-d="complet" onclick="toggleDemenag(this)">🚛 Container complet (20m³+)</div>
+          <div class="chip" data-d="neuf" onclick="toggleDemenag(this)">🛋️ Tout acheter sur place</div>
+        </div>
+        <div class="field-hint" style="margin-top:.65rem" id="demenag-hint">Container partiel vers Papeete depuis Marseille : ~3 000–5 000€. Délai 35-45 jours.</div>
+        <div class="section-label" style="margin-top:1.1rem">Budget équipement initial</div>
+        <div class="chips" id="chips-equip">
+          <div class="chip on" data-e="essentiels" onclick="toggleEquip(this)">Essentiels (électroménager de base)</div>
+          <div class="chip" data-e="complet" onclick="toggleEquip(this)">Maison complète + véhicule</div>
+          <div class="chip" data-e="minimal" onclick="toggleEquip(this)">Minimal (location meublée)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DÉMARCHES ADMIN -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-num">4</div>
+        <div class="card-title">Démarches administratives</div>
+      </div>
+      <div class="card-body">
+        <div class="checklist">
+          <div class="cl-item">
+            <span class="cl-icon">🏥</span>
+            <div class="cl-text">
+              <strong>Affiliation CPS (Caisse de Prévoyance Sociale)</strong>
+              <span>Obligatoire pour tout résident. Différente de la Sécu métropole. Couvre maladie, maternité, accidents du travail.</span>
+            </div>
+          </div>
+          <div class="cl-item">
+            <span class="cl-icon">🚗</span>
+            <div class="cl-text">
+              <strong>Permis de conduire & immatriculation véhicule</strong>
+              <span>Permis français valable. Véhicule à ré-immatriculer en Polynésie (délai 3-6 mois). Voiture quasi-indispensable hors Papeete centre.</span>
+            </div>
+          </div>
+          <div class="cl-item">
+            <span class="cl-icon">🏦</span>
+            <div class="cl-text">
+              <strong>Compte bancaire local (Banque de Tahiti / Socredo / BNP)</strong>
+              <span>Ouvrir un compte local est fortement conseillé. Les virements Europe → XPF ont des frais. L'euro n'est pas la monnaie locale (XPF ≈ 0,0084€).</span>
+            </div>
+          </div>
+          <div class="cl-item">
+            <span class="cl-icon">📋</span>
+            <div class="cl-text">
+              <strong>Déclaration de résidence (CAF, impôts)</strong>
+              <span>Sortie du territoire fiscal métropole si résidence principale en PF. Impôts locaux différents (pas d'impôt sur le revenu en PF).</span>
+            </div>
+          </div>
+          <div class="cl-item" id="cl-visa" style="display:none">
+            <span class="cl-icon">🛂</span>
+            <div class="cl-text">
+              <strong>Visa / titre de séjour</strong>
+              <span>Pour les non-ressortissants UE, un titre de séjour est nécessaire au-delà de 3 mois. Dossier à constituer auprès de la Direction de l'Immigration.</span>
+            </div>
+          </div>
+        </div>
+        <div class="field-row" style="margin-top:1rem">
+          <div class="field">
+            <label>Scolarisation enfants</label>
+            <div class="select-wrap">
+              <select id="scol" onchange="calc()">
+                <option value="non" selected>Pas d'enfants scolarisés</option>
+                <option value="public">École publique (gratuit)</option>
+                <option value="prive">École privée catholique</option>
+                <option value="lycee_fr">Lycée français (frais modérés)</option>
+              </select>
+            </div>
+            <span class="field-hint">L'enseignement public en PF est géré par le Pays, de bonne qualité.</span>
+          </div>
+          <div class="field">
+            <label>Voiture(s)</label>
+            <div class="select-wrap">
+              <select id="voiture" onchange="calc()">
+                <option value="0">Sans voiture (Papeete centre)</option>
+                <option value="1" selected>1 voiture</option>
+                <option value="2">2 voitures</option>
+              </select>
+            </div>
+            <span class="field-hint">Carburant ~160 XPF/L. Assurance + entretien : ~30 000 XPF/mois.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STYLE DE VIE -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-num">5</div>
+        <div class="card-title">Style de vie mensuel</div>
+      </div>
+      <div class="card-body">
+        <div class="section-label">Alimentation</div>
+        <div class="chips" id="chips-alim">
+          <div class="chip" data-a="local" onclick="toggleAlim(this)">🥭 Local & marchés (économique)</div>
+          <div class="chip on" data-a="mixte" onclick="toggleAlim(this)">🛒 Mixte (super + marchés)</div>
+          <div class="chip" data-a="import" onclick="toggleAlim(this)">🧀 Produits importés (coûteux)</div>
+        </div>
+        <div class="section-label" style="margin-top:1rem">Loisirs & sorties</div>
+        <div class="chips" id="chips-loisirs">
+          <div class="chip" data-lo="minimal" onclick="toggleLoisirs(this)">🏄 Nature / gratuit</div>
+          <div class="chip on" data-lo="modere" onclick="toggleLoisirs(this)">🍹 Sorties régulières</div>
+          <div class="chip" data-lo="actif" onclick="toggleLoisirs(this)">🥂 Vie sociale active</div>
+        </div>
+        <div class="section-label" style="margin-top:1rem">Voyages retour métropole / an</div>
+        <div class="chips" id="chips-retours">
+          <div class="chip on" data-ret="0" onclick="toggleRetours(this)">Aucun</div>
+          <div class="chip" data-ret="1" onclick="toggleRetours(this)">1 fois / an</div>
+          <div class="chip" data-ret="2" onclick="toggleRetours(this)">2 fois / an</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>ℹ️ Estimation basée sur des données 2026.</strong> Les prix peuvent varier selon le marché immobilier local, les négociations salariales et l'évolution du coût de la vie. Cette estimation est fournie à titre indicatif — consultez un expert-comptable local pour votre situation fiscale spécifique.
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="result-sticky">
+    <div class="tabs">
+      <button class="tab-btn on" id="tab-install" onclick="showTab('install')">💰 Budget installation</button>
+      <button class="tab-btn" id="tab-mensuel" onclick="showTab('mensuel')">📅 Mensuel</button>
+    </div>
+
+    <!-- PANNEAU INSTALLATION -->
+    <div class="result-card" id="panel-install">
+      <div class="result-head install">
+        <h2>Budget d'installation unique</h2>
+        <div class="result-total"><sup>~</sup><span id="ri-total">0</span><sub>€</sub></div>
+        <div class="result-sub" id="ri-sub">À prévoir avant le départ</div>
+      </div>
+      <div class="result-body">
+        <div class="result-section-title">Transport & installation</div>
+        <div class="result-line">
+          <span class="result-label">✈️ Billets d'avion (A/R)</span>
+          <span class="result-val" id="ri-vol">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">📦 Déménagement / fret</span>
+          <span class="result-val" id="ri-demenag">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">🛋️ Équipement logement</span>
+          <span class="result-val" id="ri-equip">—</span>
+        </div>
+
+        <div class="result-section-title">Logement</div>
+        <div class="result-line">
+          <span class="result-label">🔑 Dépôt de garantie (2 mois)</span>
+          <span class="result-val" id="ri-depot">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">📋 Frais agence</span>
+          <span class="result-val" id="ri-agence">—</span>
+        </div>
+
+        <div class="result-section-title">Admin & divers</div>
+        <div class="result-line">
+          <span class="result-label">🚗 Véhicule(s)</span>
+          <span class="result-val" id="ri-vehicule">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">📋 Démarches (frais divers)</span>
+          <span class="result-val" id="ri-admin">~500 €</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">🔒 Trésorerie de sécurité (3 mois)</span>
+          <span class="result-val amber" id="ri-tresorerie">—</span>
+        </div>
+
+        <div class="result-total-line">
+          <span>TOTAL INSTALLATION</span>
+          <span class="result-total-val" id="ri-total-line">—</span>
+        </div>
+
+        <div class="warn-box">
+          <h4>⚠️ Prévoyez large</h4>
+          <p id="warn-text">En Polynésie, tout coûte plus cher et les délais sont plus longs. Comptez systématiquement +20% de marge sur votre budget installation.</p>
+        </div>
+
+        <a href="https://www.service-public.pf" target="_blank" rel="noopener" class="cta-ressource">📋 service-public.pf — Démarches officielles</a>
+        <a href="https://www.cps.pf" target="_blank" rel="noopener" class="cta-ressource">🏥 CPS — Caisse de Prévoyance Sociale</a>
+      </div>
+    </div>
+
+    <!-- PANNEAU MENSUEL -->
+    <div class="result-card" id="panel-mensuel" style="display:none">
+      <div class="result-head mensuel">
+        <h2>Budget mensuel estimé</h2>
+        <div class="result-total"><sup>~</sup><span id="rm-total">0</span><sub>€</sub></div>
+        <div class="result-sub" id="rm-sub">par mois pour votre foyer</div>
+      </div>
+      <div class="result-body">
+        <div class="result-section-title">Logement</div>
+        <div class="result-line">
+          <span class="result-label">🏠 Loyer / mensualité</span>
+          <span class="result-val" id="rm-loyer">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">💡 Charges (élec, eau, internet)</span>
+          <span class="result-val" id="rm-charges">—</span>
+        </div>
+
+        <div class="result-section-title">Quotidien</div>
+        <div class="result-line">
+          <span class="result-label">🛒 Alimentation</span>
+          <span class="result-val" id="rm-alim">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">🚗 Transport & carburant</span>
+          <span class="result-val" id="rm-transport">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">🍽️ Sorties & restaurants</span>
+          <span class="result-val" id="rm-sorties">—</span>
+        </div>
+
+        <div class="result-section-title">Santé & famille</div>
+        <div class="result-line">
+          <span class="result-label">🏥 CPS + mutuelle complémentaire</span>
+          <span class="result-val" id="rm-sante">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">🎓 Scolarité enfants</span>
+          <span class="result-val" id="rm-scol">—</span>
+        </div>
+
+        <div class="result-section-title">Divers</div>
+        <div class="result-line">
+          <span class="result-label">📱 Télép. / abonnements</span>
+          <span class="result-val" id="rm-abos">~120 €</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">✈️ Retours métropole (lissé/mois)</span>
+          <span class="result-val" id="rm-retours">—</span>
+        </div>
+        <div class="result-line">
+          <span class="result-label">🎁 Loisirs & activités</span>
+          <span class="result-val" id="rm-loisirs">—</span>
+        </div>
+
+        <div class="result-total-line">
+          <span>TOTAL / MOIS</span>
+          <span class="result-total-val" id="rm-total-line">—</span>
+        </div>
+
+        <div class="bar-section">
+          <h3>Répartition mensuelle</h3>
+          <div class="bar-row">
+            <div class="bar-label-row"><span>🏠 Logement + charges</span><span id="pct-log">—</span></div>
+            <div class="bar-track"><div class="bar-fill" id="bar-log" style="background:var(--teal);width:0%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span>🛒 Alimentation</span><span id="pct-alim">—</span></div>
+            <div class="bar-track"><div class="bar-fill" id="bar-alim" style="background:#F4A261;width:0%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span>🚗 Transport</span><span id="pct-trans">—</span></div>
+            <div class="bar-track"><div class="bar-fill" id="bar-trans" style="background:#7EC8E3;width:0%"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span>🍽️ Sorties & loisirs</span><span id="pct-lois">—</span></div>
+            <div class="bar-track"><div class="bar-fill" id="bar-lois" style="background:#CE93D8;width:0%"></div></div>
+          </div>
+        </div>
+
+        <div class="tip-box" id="tip-mensuel">
+          <h4>💡 À savoir</h4>
+          <p id="tip-mensuel-text">La Polynésie française n'a pas d'impôt sur le revenu local — mais les cotisations CPS sont obligatoires et les salaires locaux souvent inférieurs à la métropole pour les mêmes postes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="/" class="logo-text">Fenua<em>Travel</em></a>
+  <p style="margin-top:1rem">© 2026 FenuaTravel · <a href="/calculateur-vacances/">Calculateur vacances</a> · <a href="/installation-polynesie/">S'installer en Polynésie</a> · <a href="/">Retour à l'accueil</a></p>
+</footer>
+
+<script>
+// ─── STATE ─────────────────────────────
+let logement = 'f2', statutLog = 'loc', demenag = 'partiel', equip = 'essentiels';
+let alim = 'mixte', loisirs = 'modere', retours = 0;
+
+// ─── TOGGLES ──────────────────────────
+function toggleLogement(el){document.querySelectorAll('#chips-logement .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');logement=el.dataset.l;calc()}
+function toggleStatutLog(el){document.querySelectorAll('#chips-statut-logement .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');statutLog=el.dataset.sl;calc()}
+function toggleDemenag(el){document.querySelectorAll('#chips-demenag .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');demenag=el.dataset.d;calc()}
+function toggleEquip(el){document.querySelectorAll('#chips-equip .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');equip=el.dataset.e;calc()}
+function toggleAlim(el){document.querySelectorAll('#chips-alim .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');alim=el.dataset.a;calc()}
+function toggleLoisirs(el){document.querySelectorAll('#chips-loisirs .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');loisirs=el.dataset.lo;calc()}
+function toggleRetours(el){document.querySelectorAll('#chips-retours .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');retours=parseInt(el.dataset.ret);calc()}
+function showTab(t){
+  document.getElementById('panel-install').style.display = t==='install'?'block':'none';
+  document.getElementById('panel-mensuel').style.display = t==='mensuel'?'block':'none';
+  document.getElementById('tab-install').classList.toggle('on',t==='install');
+  document.getElementById('tab-mensuel').classList.toggle('on',t==='mensuel');
+}
+
+// ─── DATA ──────────────────────────────
+// Loyers mensuels (€) selon île et type
+const LOYERS = {
+  tahiti_papeete:  {studio:700,f2:1100,f3:1600,f4:2400},
+  tahiti_periph:   {studio:550,f2:850, f3:1250,f4:1900},
+  moorea:          {studio:600,f2:950, f3:1400,f4:2100},
+  bora:            {studio:900,f2:1500,f3:2300,f4:3500},
+  raiatea:         {studio:450,f2:700, f3:1000,f4:1600},
+  tuamotu:         {studio:400,f2:650, f3:950, f4:1400},
+  marquises:       {studio:350,f2:550, f3:800, f4:1200},
+};
+const CHARGES_MENSUEL = {studio:120,f2:180,f3:230,f4:290};
+
+// Alimentation/mois selon foyer
+const ALIM_BASE = {
+  seul:    {local:300,mixte:450,import:700},
+  couple:  {local:500,mixte:750,import:1150},
+  famille1:{local:650,mixte:950,import:1450},
+  famille2:{local:800,mixte:1150,import:1750},
+  famille3:{local:950,mixte:1350,import:2100},
+};
+
+// Transport mensuel
+const TRANSPORT_VOITURE = {0:60,1:220,2:380}; // assurance+carbu+entretien
+
+// Loisirs
+const LOISIRS_M = {minimal:100,modere:280,actif:550};
+
+// Santé CPS
+const SANTE_BASE = {seul:180,couple:300,famille1:380,famille2:450,famille3:520};
+
+// Scolarité (mensuel)
+const SCOL_M = {non:0,public:0,prive:80,lycee_fr:120};
+
+// Déménagement
+const DEMENAG_COUT = {valises:0,partiel:4000,complet:9000,neuf:0};
+const EQUIP_COUT = {minimal:1500,essentiels:5000,complet:18000};
+
+// Véhicule achat initial
+const VEHICULE_ACHAT = {0:0,1:12000,2:24000};
+
+function fmt(n){return new Intl.NumberFormat('fr-FR').format(Math.round(n));}
+
+function calc(){
+  const sit = document.getElementById('situation').value;
+  const foyer = document.getElementById('foyer').value;
+  const ile = document.getElementById('ile').value;
+  const origine = document.getElementById('origine').value;
+  const scolVal = document.getElementById('scol').value;
+  const voitureNb = parseInt(document.getElementById('voiture').value);
+
+  // ── MENSUEL ──────────────────────────
+  const loyer = statutLog === 'fonc' ? 0 : (LOYERS[ile]?.[logement] || 850);
+  const charges = CHARGES_MENSUEL[logement] || 180;
+  const alimentM = ALIM_BASE[foyer]?.[alim] || 750;
+  const transportM = TRANSPORT_VOITURE[voitureNb] || 60;
+  const sortiesM = LOISIRS_M[loisirs];
+  const santeM = SANTE_BASE[foyer] || 300;
+  const scolM = SCOL_M[scolVal] || 0;
+  const aboM = 120;
+  const retoursM = retours === 0 ? 0 : Math.round((retours * (origine==='france_metro'?1400:900) * (foyer==='seul'?1:foyer==='couple'?2:foyer==='famille1'?3:4)) / 12);
+  const loisM = sortiesM;
+
+  const totalM = loyer + charges + alimentM + transportM + sortiesM + santeM + scolM + aboM + retoursM;
+
+  // ── INSTALLATION ──────────────────────
+  const volAR = (origine === 'france_metro' ? 1450 : origine === 'australie' ? 700 : 1600)
+    * (foyer === 'seul' ? 1 : foyer === 'couple' ? 2 : foyer === 'famille1' ? 3 : foyer === 'famille2' ? 4 : 5);
+  const frDemenag = DEMENAG_COUT[demenag];
+  const frEquip = EQUIP_COUT[equip];
+  const depot = statutLog === 'loc' ? loyer * 2 : 0;
+  const agence = statutLog === 'loc' ? loyer : 0;
+  const vehiculeI = VEHICULE_ACHAT[voitureNb];
+  const admin = 500;
+  const tresorerie = totalM * 3; // 3 mois de sécurité
+
+  const totalI = volAR + frDemenag + frEquip + depot + agence + vehiculeI + admin + tresorerie;
+
+  // DOM INSTALLATION
+  document.getElementById('ri-vol').textContent = fmt(volAR) + ' €';
+  document.getElementById('ri-demenag').textContent = frDemenag === 0 ? (demenag === 'valises' ? '0 € (valises)' : 'Gratuit (sur place)') : fmt(frDemenag) + ' €';
+  document.getElementById('ri-equip').textContent = fmt(frEquip) + ' €';
+  document.getElementById('ri-depot').textContent = statutLog === 'loc' ? fmt(depot) + ' €' : '—';
+  document.getElementById('ri-agence').textContent = statutLog === 'loc' ? fmt(agence) + ' €' : '—';
+  document.getElementById('ri-vehicule').textContent = voitureNb === 0 ? '—' : fmt(vehiculeI) + ' €';
+  document.getElementById('ri-tresorerie').textContent = fmt(tresorerie) + ' € (3 mois)';
+  document.getElementById('ri-total').textContent = fmt(totalI);
+  document.getElementById('ri-total-line').textContent = '~' + fmt(totalI) + ' €';
+  document.getElementById('ri-sub').textContent = `Pour ${foyer==='seul'?'1 personne':foyer==='couple'?'un couple':'une famille'}`;
+
+  // DOM MENSUEL
+  document.getElementById('rm-loyer').textContent = statutLog === 'fonc' ? '0 € (logement de fonction)' : fmt(loyer) + ' € / mois';
+  document.getElementById('rm-charges').textContent = fmt(charges) + ' € / mois';
+  document.getElementById('rm-alim').textContent = fmt(alimentM) + ' € / mois';
+  document.getElementById('rm-transport').textContent = fmt(transportM) + ' € / mois';
+  document.getElementById('rm-sorties').textContent = fmt(sortiesM) + ' € / mois';
+  document.getElementById('rm-sante').textContent = fmt(santeM) + ' € / mois';
+  document.getElementById('rm-scol').textContent = scolM === 0 ? '0 € (gratuit)' : fmt(scolM) + ' € / mois';
+  document.getElementById('rm-retours').textContent = retours === 0 ? '—' : fmt(retoursM) + ' € / mois';
+  document.getElementById('rm-loisirs').textContent = fmt(loisM) + ' € / mois';
+  document.getElementById('rm-total').textContent = fmt(totalM);
+  document.getElementById('rm-total-line').textContent = '~' + fmt(totalM) + ' € / mois';
+  document.getElementById('rm-sub').textContent = `Estimation mensuelle pour ${foyer==='seul'?'1 personne':foyer==='couple'?'un couple':'une famille'}`;
+
+  // BARRES MENSUEL
+  const setBar = (pid,bid,val,tot)=>{
+    const p = tot>0?Math.round(val/tot*100):0;
+    document.getElementById(pid).textContent=p+'%';
+    document.getElementById(bid).style.width=p+'%';
+  };
+  setBar('pct-log','bar-log',loyer+charges,totalM);
+  setBar('pct-alim','bar-alim',alimentM,totalM);
+  setBar('pct-trans','bar-trans',transportM,totalM);
+  setBar('pct-lois','bar-lois',sortiesM,totalM);
+
+  // TIP MENSUEL
+  let tip = '';
+  if (ile === 'bora') tip = 'Bora Bora est la destination la plus chère pour y vivre : loyers 40% au-dessus de Tahiti et moins d\'emplois locaux. Idéale si vous êtes indépendant ou retraité.';
+  else if (ile === 'marquises') tip = 'Les Marquises sont 40-50% moins chères qu\'à Tahiti, mais très isolées. Pensez aux coûts de déplacement vers Papeete (1h30 de vol, ~100 000 XPF A/R).';
+  else if (sit === 'nomade') tip = 'En tant que nomade digital, le fisc polynésien (DICP) peut vous considérer résident fiscal en PF après 6 mois — avantage : pas d\'impôt sur le revenu en Polynésie.';
+  else if (sit === 'salarie_local') tip = 'Les salaires locaux sont en XPF. Le SMIG polynésien est ~100 000 XPF/mois (~840€). Les salaires des cadres sont comparables à la province française.';
+  else tip = 'En Polynésie, les fruits et légumes locaux (fruits tropicaux, poissons) sont moins chers qu\'en métropole. Les produits importés (fromage, vin, voiture neuve) sont 30-60% plus chers.';
+  document.getElementById('tip-mensuel-text').textContent = tip;
+
+  // WARN
+  const warnText = totalI > 30000
+    ? 'Budget conséquent — mais il couvre vraiment toutes les dépenses. Évitez d\'arriver avec moins de 20 000€ de côté, les imprévus sont fréquents et coûteux en Polynésie.'
+    : 'Budget raisonnable pour une installation modeste. Gardez toujours 3 mois de charges disponibles sur un compte local.';
+  document.getElementById('warn-text').textContent = warnText;
+
+  // Afficher item visa si non-UE (simplifié)
+  // (dans la vraie vie on demanderait la nationalité)
+}
+
+calc();
+</script>
+</body>
+</html>

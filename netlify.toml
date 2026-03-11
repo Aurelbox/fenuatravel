@@ -1,0 +1,70 @@
+# Configuration Netlify pour FenuaTravel
+# Site statique HTML/CSS/JS — aucun build nécessaire
+
+[build]
+  publish = "."
+
+# Redirects & headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Redirects propres (URLs sans .html)
+[[redirects]]
+  from = "/bora-bora"
+  to   = "/bora-bora/"
+  status = 301
+
+[[redirects]]
+  from = "/moorea"
+  to   = "/moorea/"
+  status = 301
+
+[[redirects]]
+  from = "/tahiti"
+  to   = "/tahiti/"
+  status = 301
+
+[[redirects]]
+  from = "/rangiroa"
+  to   = "/rangiroa/"
+  status = 301
+
+[[redirects]]
+  from = "/huahine"
+  to   = "/huahine/"
+  status = 301
+
+[[redirects]]
+  from = "/tikehau"
+  to   = "/tikehau/"
+  status = 301
+
+[[redirects]]
+  from = "/calculateur-vacances"
+  to   = "/calculateur-vacances/"
+  status = 301
+
+[[redirects]]
+  from = "/installation-polynesie"
+  to   = "/installation-polynesie/"
+  status = 301
+
+[[redirects]]
+  from = "/a-propos"
+  to   = "/a-propos/"
+  status = 301
