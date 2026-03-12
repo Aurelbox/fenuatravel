@@ -154,14 +154,14 @@
     /* FOOTER */
     footer { background:var(--gray-800); color:rgba(255,255,255,.5); padding:3.5rem 2rem 2rem; }
     .footer-inner { max-width:1100px; margin:0 auto; }
-    .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; margin-bottom:3rem; }
+    .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr 1fr; gap:2rem; margin-bottom:3rem; }
     .footer-logo { font-family:'Fraunces',serif; font-size:1.2rem; font-weight:600; color:#fff; margin-bottom:.75rem; display:block; }
     .footer-logo span { color:var(--v-primary); }
     .footer-about { font-size:.85rem; line-height:1.6; max-width:260px; }
     .footer-col h4 { font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.35); margin-bottom:1rem; }
     .footer-col a { display:block; font-size:.875rem; color:rgba(255,255,255,.5); margin-bottom:.6rem; transition:color .15s; }
     .footer-col a:hover { color:#fff; }
-    .footer-col a.vl { color:#F5A285; } .footer-col a.el { color:#7DB8E0; }
+    .footer-col a.vl { color:#F5A285; } .footer-col a.el { color:#7DB8E0; } .footer-col a.pl { color:#A3C4E8; }
     .footer-bottom { border-top:1px solid rgba(255,255,255,.08); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; font-size:.8rem; }
     .footer-bottom-links { display:flex; gap:1.5rem; }
     .footer-bottom-links a { color:rgba(255,255,255,.35); transition:color .15s; }
@@ -179,7 +179,7 @@
       .dest-grid { grid-template-columns:1fr 1fr; }
       .expat-grid { grid-template-columns:1fr; }
       .expat-numbers { grid-template-columns:1fr 1fr; }
-      .footer-top { grid-template-columns:1fr 1fr; }
+      .footer-top { grid-template-columns:1fr 1fr 1fr; }
       .section-head { flex-direction:column; align-items:flex-start; }
       .calc-banner,.calc-banner-expat { flex-direction:column; text-align:center; }
     }
@@ -197,6 +197,7 @@
   <a href="/" class="logo">Fenua<span>Travel</span></a>
   <ul class="nav-links">
     <li><a href="#voyager" data-fr>Voyager</a><a href="#voyager" data-en>Travel</a></li>
+    <li><a href="/quand-partir-polynesie/" data-fr>Planifier</a><a href="/quand-partir-polynesie/" data-en>Plan</a></li>
     <li><a href="#sinstaller" data-fr>S'installer</a><a href="#sinstaller" data-en>Relocate</a></li>
     <li><a href="/a-propos/" data-fr>À propos</a><a href="/a-propos/" data-en>About</a></li>
     <li><a href="/installation-polynesie/" class="pill" data-fr>Guide expat</a><a href="/installation-polynesie/" class="pill" data-en>Expat guide</a></li>
@@ -337,21 +338,27 @@
         <p class="footer-about" data-en>Independent guide to French Polynesia, written from Tahiti by a local resident. Updated in 2026.</p>
       </div>
       <div class="footer-col">
-        <h4 data-fr>Vacances</h4><h4 data-en>Vacation</h4>
+        <h4 data-fr>Îles</h4><h4 data-en>Islands</h4>
         <a href="/bora-bora/" class="vl">Bora Bora</a>
         <a href="/moorea/" class="vl">Moorea</a>
         <a href="/tahiti/" class="vl">Tahiti</a>
         <a href="/rangiroa/" class="vl">Rangiroa</a>
         <a href="/huahine/" class="vl">Huahine</a>
         <a href="/tikehau/" class="vl">Tikehau</a>
-        <a href="/calculateur-vacances/" class="vl" data-fr>Calculateur voyage</a><a href="/calculateur-vacances/" class="vl" data-en>Trip calculator</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr>Préparer</h4><h4 data-en>Planning</h4>
+        <a href="/quand-partir-polynesie/" class="pl" data-fr>Quand partir ?</a><a href="/quand-partir-polynesie/" class="pl" data-en>When to go?</a>
+        <a href="/itineraire-polynesie-2-semaines/" class="pl" data-fr>Itinéraire 2 semaines</a><a href="/itineraire-polynesie-2-semaines/" class="pl" data-en>2-week itinerary</a>
+        <a href="/budget-voyage-polynesie/" class="pl" data-fr>Budget voyage</a><a href="/budget-voyage-polynesie/" class="pl" data-en>Trip budget</a>
+        <a href="/calculateur-vacances/" class="pl" data-fr>Calculateur</a><a href="/calculateur-vacances/" class="pl" data-en>Calculator</a>
       </div>
       <div class="footer-col">
         <h4 data-fr>S'installer</h4><h4 data-en>Relocate</h4>
         <a href="/installation-polynesie/" class="el" data-fr>Guide installation</a><a href="/installation-polynesie/" class="el" data-en>Relocation guide</a>
         <a href="/installation-polynesie/" class="el" data-fr>Logement & loyers</a><a href="/installation-polynesie/" class="el" data-en>Housing & rents</a>
         <a href="/installation-polynesie/" class="el" data-fr>CPS & santé</a><a href="/installation-polynesie/" class="el" data-en>CPS & healthcare</a>
-        <a href="/installation-polynesie/" class="el" data-fr>Calculateur expat</a><a href="/installation-polynesie/" class="el" data-en>Expat calculator</a>
+        <a href="/installation-polynesie/" class="el" data-fr>Travailler</a><a href="/installation-polynesie/" class="el" data-en>Working</a>
       </div>
       <div class="footer-col">
         <h4 data-fr>Le site</h4><h4 data-en>About</h4>
