@@ -1,117 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ===== PAGE D'ACCUEIL ===== -->
   <url>
-    <loc>https://www.fenuatravel.com/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/</loc>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.fenuatravel.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.fenuatravel.com/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fenuatravel.com/"/>
   </url>
 
-  <!-- ===== PAGES DESTINATIONS ===== -->
+  <!-- Island hubs -->
   <url>
-    <loc>https://www.fenuatravel.com/bora-bora/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/bora-bora/</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.fenuatravel.com/bora-bora/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.fenuatravel.com/bora-bora/"/>
   </url>
-
   <url>
-    <loc>https://www.fenuatravel.com/moorea/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/moorea/</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.fenuatravel.com/moorea/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.fenuatravel.com/moorea/"/>
   </url>
-
   <url>
-    <loc>https://www.fenuatravel.com/tahiti/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/tahiti/</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.fenuatravel.com/tahiti/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.fenuatravel.com/tahiti/"/>
+    <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://www.fenuatravel.com/rangiroa/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/rangiroa/</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.fenuatravel.com/rangiroa/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.fenuatravel.com/rangiroa/"/>
+    <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://www.fenuatravel.com/huahine/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/tikehau/</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.fenuatravel.com/huahine/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.fenuatravel.com/huahine/"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fenuatravel.com/huahine/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
+  <!-- Planning pages -->
   <url>
-    <loc>https://www.fenuatravel.com/tikehau/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/budget-voyage-polynesie/</loc>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.fenuatravel.com/tikehau/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.fenuatravel.com/tikehau/"/>
+  </url>
+  <url>
+    <loc>https://fenuatravel.com/quand-partir-polynesie/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fenuatravel.com/itineraire-polynesie-2-semaines/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fenuatravel.com/lune-de-miel-polynesie/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- ===== PAGES PRATIQUES (à créer) ===== -->
+  <!-- Expat / Install pages -->
   <url>
-    <loc>https://www.fenuatravel.com/vols-polynesie/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://www.fenuatravel.com/budget-voyage/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/travailler-polynesie/</loc>
+    <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://www.fenuatravel.com/meilleure-periode/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.fenuatravel.com/combinaisons-iles/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <loc>https://fenuatravel.com/installation-polynesie/</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
+  <!-- Tools -->
   <url>
-    <loc>https://www.fenuatravel.com/calculateur/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-
-  <url>
-    <loc>https://www.fenuatravel.com/a-propos/</loc>
+    <loc>https://fenuatravel.com/calculateur-vacances/</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.fenuatravel.com/a-propos/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.fenuatravel.com/en/about/"/>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Static -->
+  <url>
+    <loc>https://fenuatravel.com/a-propos/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
