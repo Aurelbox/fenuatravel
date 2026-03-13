@@ -8,9 +8,11 @@
   <link rel="canonical" href="https://fenuatravel.com/budget-voyage-polynesie/">
   <link rel="alternate" hreflang="fr" href="https://fenuatravel.com/budget-voyage-polynesie/">
   <link rel="alternate" hreflang="en" href="https://fenuatravel.com/en/budget-voyage-polynesie/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:wght@300;600&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -89,7 +91,7 @@
       --gray-800: #1F2937;
       --text: #1a1a1a;
       --font-body: 'Inter', sans-serif;
-      --font-display: 'Fraunces', serif;
+      --font-display: 'Cormorant Garamond', serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -240,7 +242,41 @@
     .footer-col a { font-size: .82rem; color: var(--gray-400); text-decoration: none; }
     .footer-col a:hover { color: #fff; }
     .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 1.5rem; font-size: .78rem; text-align: center; }
-  </style>
+  
+    /* ── FOOTER FenuaTravel ── */
+    footer { background: #0D1F2D; color: rgba(255,255,255,.7); padding: 4rem 0 0; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; padding: 0 3rem; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 3rem;
+      padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700;
+      color: #fff; display: block; margin-bottom: 1rem; }
+    .footer-logo em { font-style: italic; color: #4DB6AC; }
+    .footer-about { font-size: .82rem; line-height: 1.7; color: rgba(255,255,255,.5); }
+    .footer-col { display: flex; flex-direction: column; gap: .5rem; }
+    .footer-col h4 { font-size: .68rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 1rem; }
+    .footer-col a { font-size: .85rem; color: rgba(255,255,255,.6); text-decoration: none; transition: color .2s; }
+    .footer-col a:hover { color: rgba(255,255,255,.8); }
+    .footer-col a.vl { color: rgba(245,162,133,.55); }
+    .footer-col a.vl:hover { color: #F5A285; }
+    .footer-col a.el { color: rgba(126,200,227,.45); }
+    .footer-col a.el:hover { color: #7EC8E3; }
+    .footer-col a.pl { color: rgba(163,196,232,.45); }
+    .footer-col a.pl:hover { color: #A3C4E8; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between;
+      padding: 1.5rem 0; font-size: .75rem; color: rgba(255,255,255,.3); flex-wrap: wrap; gap: 1rem; }
+    .footer-bottom-links { display: flex; gap: 1.5rem; }
+    .footer-bottom-links a { color: rgba(255,255,255,.3); text-decoration: none; font-size: .75rem; transition: color .2s; }
+    .footer-bottom-links a:hover { color: rgba(255,255,255,.5); }
+    @media (max-width: 900px) {
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .footer-inner { padding: 0 1.5rem; }
+    }
+    @media (max-width: 560px) {
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+    </style>
 </head>
 <body>
 
@@ -752,6 +788,52 @@
       if (saved) setLang(saved);
     })();
   </script>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <span class="footer-logo">Fenua<em>Travel</em></span>
+        <p class="footer-about" data-fr>Guide indépendant sur la Polynésie française, rédigé depuis Tahiti par un résident local. Mis à jour en 2026. Ce site contient des liens d'affiliation déclarés — ils ne coûtent rien de plus.</p>
+        <p class="footer-about" data-en>Independent guide to French Polynesia, written from Tahiti by a local resident. Updated in 2026. This site contains disclosed affiliate links — they cost you nothing extra.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr>Îles</h4><h4 data-en>Islands</h4>
+        <a href="/bora-bora/" class="vl">Bora Bora</a>
+        <a href="/moorea/" class="vl">Moorea</a>
+        <a href="/tahiti/" class="vl">Tahiti</a>
+        <a href="/rangiroa/" class="vl">Rangiroa</a>
+        <a href="/huahine/" class="vl">Huahine</a>
+        <a href="/tikehau/" class="vl">Tikehau</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr>Préparer</h4><h4 data-en>Planning</h4>
+        <a href="/quand-partir-polynesie/" class="pl" data-fr>Quand partir ?</a><a href="/quand-partir-polynesie/" class="pl" data-en>When to go?</a>
+        <a href="/itineraire-polynesie-2-semaines/" class="pl" data-fr>Itinéraire 2 semaines</a><a href="/itineraire-polynesie-2-semaines/" class="pl" data-en>2-week itinerary</a>
+        <a href="/budget-voyage-polynesie/" class="pl" data-fr>Budget voyage</a><a href="/budget-voyage-polynesie/" class="pl" data-en>Trip budget</a>
+        <a href="/calculateur-vacances/" class="pl" data-fr>Calculateur</a><a href="/calculateur-vacances/" class="pl" data-en>Calculator</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr>S'installer</h4><h4 data-en>Relocate</h4>
+        <a href="/installation-polynesie/" class="el" data-fr>Guide installation</a><a href="/installation-polynesie/" class="el" data-en>Relocation guide</a>
+        <a href="/travailler-polynesie/" class="el" data-fr>Travailler</a><a href="/travailler-polynesie/" class="el" data-en>Working</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr>Le site</h4><h4 data-en>About</h4>
+        <a href="/a-propos/" data-fr>À propos</a><a href="/a-propos/" data-en>About</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-fr>© 2026 FenuaTravel · Tahiti, Polynésie française</span>
+      <span data-en>© 2026 FenuaTravel · Tahiti, French Polynesia</span>
+      <div class="footer-bottom-links">
+        <a href="/a-propos/" data-fr>Mentions légales</a><a href="/a-propos/" data-en>Legal notice</a>
+        <a href="/a-propos/" data-fr>Affiliations</a><a href="/a-propos/" data-en>Affiliations</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

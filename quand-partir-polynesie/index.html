@@ -75,9 +75,11 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -96,7 +98,7 @@
 
     /* NAV */
     nav { position:sticky; top:0; z-index:100; background:rgba(255,255,255,.95); backdrop-filter:blur(12px); border-bottom:1px solid var(--gray-200); padding:0 2rem; display:flex; align-items:center; justify-content:space-between; height:60px; }
-    .logo { font-family:'Fraunces',serif; font-size:1.3rem; font-weight:600; }
+    .logo { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:600; }
     .logo span { color:var(--v-primary); }
     .nav-links { display:flex; gap:2rem; list-style:none; align-items:center; }
     .nav-links a { font-size:.875rem; font-weight:500; color:var(--gray-600); transition:color .15s; }
@@ -116,7 +118,7 @@
     .page-hero { background:var(--v-light); border-bottom:1px solid #FAD5CC; padding:3rem 2rem 4rem; }
     .page-hero-inner { max-width:1100px; margin:0 auto; }
     .page-eyebrow { font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--v-primary); margin-bottom:1rem; }
-    .page-hero h1 { font-family:'Fraunces',serif; font-size:clamp(2rem,4vw,3rem); font-weight:300; line-height:1.15; letter-spacing:-.02em; max-width:700px; margin-bottom:1rem; }
+    .page-hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,4vw,3rem); font-weight:300; line-height:1.15; letter-spacing:-.02em; max-width:700px; margin-bottom:1rem; }
     .page-hero h1 strong { font-weight:600; }
     .page-hero-sub { font-size:1rem; color:var(--gray-600); max-width:580px; line-height:1.65; margin-bottom:2rem; }
     .hero-meta { display:flex; gap:2rem; flex-wrap:wrap; }
@@ -131,14 +133,14 @@
     /* SECTIONS */
     .section { margin-bottom:3.5rem; }
     .section-label { font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--v-primary); margin-bottom:.5rem; }
-    .section h2 { font-family:'Fraunces',serif; font-size:1.75rem; font-weight:600; line-height:1.2; margin-bottom:1.25rem; letter-spacing:-.01em; }
-    .section h3 { font-family:'Fraunces',serif; font-size:1.15rem; font-weight:600; margin-bottom:.75rem; margin-top:1.5rem; }
+    .section h2 { font-family:'Cormorant Garamond',serif; font-size:1.75rem; font-weight:600; line-height:1.2; margin-bottom:1.25rem; letter-spacing:-.01em; }
+    .section h3 { font-family:'Cormorant Garamond',serif; font-size:1.15rem; font-weight:600; margin-bottom:.75rem; margin-top:1.5rem; }
     .section p { color:var(--gray-600); margin-bottom:1rem; line-height:1.7; }
     .section p:last-child { margin-bottom:0; }
 
     /* SUMMARY BOX */
     .summary-box { background:var(--v-light); border:1.5px solid #FAD5CC; border-radius:6px; padding:1.75rem 2rem; margin-bottom:2.5rem; }
-    .summary-box h3 { font-family:'Fraunces',serif; font-size:1.1rem; font-weight:600; margin-bottom:1.25rem; color:var(--v-dark); }
+    .summary-box h3 { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:600; margin-bottom:1.25rem; color:var(--v-dark); }
     .summary-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
     .summary-item { display:flex; flex-direction:column; gap:.2rem; }
     .summary-item .s-label { font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gray-400); }
@@ -153,7 +155,7 @@
     .season-card .s-badge { display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:.25rem .65rem; border-radius:3px; margin-bottom:.75rem; }
     .season-card.dry .s-badge { background:var(--v-primary); color:#fff; }
     .season-card.wet .s-badge { background:var(--e-primary); color:#fff; }
-    .season-card h3 { font-family:'Fraunces',serif; font-size:1.1rem; font-weight:600; margin-bottom:.75rem; margin-top:0; }
+    .season-card h3 { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:600; margin-bottom:.75rem; margin-top:0; }
     .season-card p { font-size:.875rem; color:var(--gray-600); margin-bottom:.75rem; }
     .season-list { list-style:none; display:flex; flex-direction:column; gap:.4rem; }
     .season-list li { font-size:.85rem; color:var(--gray-600); padding-left:1rem; position:relative; }
@@ -226,7 +228,7 @@
     /* SIDEBAR WIDGETS */
     .widget { background:#fff; border:1px solid var(--gray-200); border-radius:6px; padding:1.5rem; }
     .widget-title { font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gray-400); margin-bottom:1rem; }
-    .widget h3 { font-family:'Fraunces',serif; font-size:1rem; font-weight:600; margin-bottom:.5rem; }
+    .widget h3 { font-family:'Cormorant Garamond',serif; font-size:1rem; font-weight:600; margin-bottom:.5rem; }
     .widget p { font-size:.83rem; color:var(--gray-600); line-height:1.6; margin-bottom:1rem; }
     .btn-v { display:inline-flex; align-items:center; gap:.4rem; padding:.8rem 1.5rem; border-radius:4px; font-size:.875rem; font-weight:600; background:var(--v-primary); color:#fff; transition:background .2s; border:none; width:100%; justify-content:center; }
     .btn-v:hover { background:var(--v-dark); }
@@ -249,7 +251,7 @@
     footer { background:var(--gray-800); color:rgba(255,255,255,.5); padding:3.5rem 2rem 2rem; margin-top:4rem; }
     .footer-inner { max-width:1100px; margin:0 auto; }
     .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr 1fr; gap:3rem; margin-bottom:3rem; }
-    .footer-logo { font-family:'Fraunces',serif; font-size:1.2rem; font-weight:600; color:#fff; margin-bottom:.75rem; display:block; }
+    .footer-logo { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:600; color:#fff; margin-bottom:.75rem; display:block; }
     .footer-logo span { color:var(--v-primary); }
     .footer-about { font-size:.85rem; line-height:1.6; max-width:220px; }
     .footer-col h4 { font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.35); margin-bottom:1rem; }
@@ -284,7 +286,41 @@
       .nav-links .pill { display:none; }
       .footer-top { grid-template-columns:1fr; }
     }
-  </style>
+  
+    /* ── FOOTER FenuaTravel ── */
+    footer { background: #0D1F2D; color: rgba(255,255,255,.7); padding: 4rem 0 0; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; padding: 0 3rem; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 3rem;
+      padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700;
+      color: #fff; display: block; margin-bottom: 1rem; }
+    .footer-logo em { font-style: italic; color: #4DB6AC; }
+    .footer-about { font-size: .82rem; line-height: 1.7; color: rgba(255,255,255,.5); }
+    .footer-col { display: flex; flex-direction: column; gap: .5rem; }
+    .footer-col h4 { font-size: .68rem; font-weight: 600; letter-spacing: .1em;
+      text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 1rem; }
+    .footer-col a { font-size: .85rem; color: rgba(255,255,255,.6); text-decoration: none; transition: color .2s; }
+    .footer-col a:hover { color: rgba(255,255,255,.8); }
+    .footer-col a.vl { color: rgba(245,162,133,.55); }
+    .footer-col a.vl:hover { color: #F5A285; }
+    .footer-col a.el { color: rgba(126,200,227,.45); }
+    .footer-col a.el:hover { color: #7EC8E3; }
+    .footer-col a.pl { color: rgba(163,196,232,.45); }
+    .footer-col a.pl:hover { color: #A3C4E8; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between;
+      padding: 1.5rem 0; font-size: .75rem; color: rgba(255,255,255,.3); flex-wrap: wrap; gap: 1rem; }
+    .footer-bottom-links { display: flex; gap: 1.5rem; }
+    .footer-bottom-links a { color: rgba(255,255,255,.3); text-decoration: none; font-size: .75rem; transition: color .2s; }
+    .footer-bottom-links a:hover { color: rgba(255,255,255,.5); }
+    @media (max-width: 900px) {
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .footer-inner { padding: 0 1.5rem; }
+    }
+    @media (max-width: 560px) {
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+    </style>
 </head>
 <body class="lang-fr">
 
@@ -924,9 +960,9 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <span class="footer-logo">Fenua<span>Travel</span></span>
-        <p class="footer-about" data-fr>Guide indépendant sur la Polynésie française, rédigé depuis Tahiti par un résident local. Mis à jour en 2026.</p>
-        <p class="footer-about" data-en>Independent guide to French Polynesia, written from Tahiti by a local resident. Updated in 2026.</p>
+        <span class="footer-logo">Fenua<em>Travel</em></span>
+        <p class="footer-about" data-fr>Guide indépendant sur la Polynésie française, rédigé depuis Tahiti par un résident local. Mis à jour en 2026. Ce site contient des liens d'affiliation déclarés — ils ne coûtent rien de plus.</p>
+        <p class="footer-about" data-en>Independent guide to French Polynesia, written from Tahiti by a local resident. Updated in 2026. This site contains disclosed affiliate links — they cost you nothing extra.</p>
       </div>
       <div class="footer-col">
         <h4 data-fr>Îles</h4><h4 data-en>Islands</h4>
@@ -939,21 +975,15 @@
       </div>
       <div class="footer-col">
         <h4 data-fr>Préparer</h4><h4 data-en>Planning</h4>
-        <a href="/quand-partir-polynesie/" class="pl" data-fr>Quand partir ?</a>
-        <a href="/quand-partir-polynesie/" class="pl" data-en>When to go?</a>
-        <a href="/itineraire-polynesie-2-semaines/" class="pl" data-fr>Itinéraire 2 semaines</a>
-        <a href="/itineraire-polynesie-2-semaines/" class="pl" data-en>2-week itinerary</a>
-        <a href="/budget-voyage-polynesie/" class="pl" data-fr>Budget voyage</a>
-        <a href="/budget-voyage-polynesie/" class="pl" data-en>Trip budget</a>
+        <a href="/quand-partir-polynesie/" class="pl" data-fr>Quand partir ?</a><a href="/quand-partir-polynesie/" class="pl" data-en>When to go?</a>
+        <a href="/itineraire-polynesie-2-semaines/" class="pl" data-fr>Itinéraire 2 semaines</a><a href="/itineraire-polynesie-2-semaines/" class="pl" data-en>2-week itinerary</a>
+        <a href="/budget-voyage-polynesie/" class="pl" data-fr>Budget voyage</a><a href="/budget-voyage-polynesie/" class="pl" data-en>Trip budget</a>
+        <a href="/calculateur-vacances/" class="pl" data-fr>Calculateur</a><a href="/calculateur-vacances/" class="pl" data-en>Calculator</a>
       </div>
       <div class="footer-col">
         <h4 data-fr>S'installer</h4><h4 data-en>Relocate</h4>
-        <a href="/installation-polynesie/" class="el" data-fr>Guide installation</a>
-        <a href="/installation-polynesie/" class="el" data-en>Relocation guide</a>
-        <a href="/installation-polynesie/" class="el" data-fr>Logement Tahiti</a>
-        <a href="/installation-polynesie/" class="el" data-en>Housing Tahiti</a>
-        <a href="/installation-polynesie/" class="el" data-fr>CPS & santé</a>
-        <a href="/installation-polynesie/" class="el" data-en>CPS & healthcare</a>
+        <a href="/installation-polynesie/" class="el" data-fr>Guide installation</a><a href="/installation-polynesie/" class="el" data-en>Relocation guide</a>
+        <a href="/travailler-polynesie/" class="el" data-fr>Travailler</a><a href="/travailler-polynesie/" class="el" data-en>Working</a>
       </div>
       <div class="footer-col">
         <h4 data-fr>Le site</h4><h4 data-en>About</h4>
